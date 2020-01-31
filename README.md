@@ -10,6 +10,7 @@
 - [BIOS Settings for KabyLake](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/intel-config.plist/kaby-lake#intel-bios-settings)
 
 ## EFI Drivers
+- `FwRuntimeServices.efi`, OpenCore built-in EFI driver
 - [AppleSupportPkg](https://github.com/acidanthera/AppleSupportPkg)
   - ApfsDriverLoader.efi
   - VBoxHfs.efi
