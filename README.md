@@ -61,7 +61,7 @@ PciRoot(0x0)/Pci(0x1f,0x3)
 ```
 
 ## :construction: Not-Working
-- Battery (Not showing battery indicator)
+- Battery (Battery is not detected by system)
 - Touchpad `Working` but not showing in `System Preferences` -> `Trackpad`
 
 ## Troubleshooting
