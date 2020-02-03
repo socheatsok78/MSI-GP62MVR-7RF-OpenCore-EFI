@@ -20,19 +20,35 @@
   - VirtualSMC.kext
   - SMCBatteryManager.kext
   - SMCProcessor.kext
+  - SMCSuperIO.kext
 - [Lilu.kext](https://github.com/acidanthera/Lilu)
 - [LiluFriend.kext](https://github.com/PMheart/LiluFriend)
 - [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen)
 - [AppleALC.kext](https://github.com/acidanthera/AppleALC)
 - [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet)
+- [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID)
+- [VoodooInput.kext](https://github.com/acidanthera/VoodooInput)
+- [VoodooPS2Controller.kext](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
 - [USBInjectAll.kext](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)
   - [XHCI-unsupported.kext](https://github.com/RehabMan/OS-X-USB-Inject-All)
 - [AppleMCEReporterDisabler.kext](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip)
 
-### MacOS Post-Install
+## MacOS Post-Install
 
 #### Audio
 ```
 PciRoot(0x0)/Pci(0x1f,0x3)
 - layout-id: 06200000
+
+// or...
+
+7C436110-AB2A-4BBB-A880-FE41995C9F82
+- boot-args: alcid=98
 ```
+
+#### Nvidia GTX 1060 Graphic [Disabled]
+```
+7C436110-AB2A-4BBB-A880-FE41995C9F82
+- boot-args: -wegnoegpu
+```
+
