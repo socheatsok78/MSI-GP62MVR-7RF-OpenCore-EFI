@@ -20,7 +20,7 @@
 ### Tools
 - [Shell.efi](https://github.com/acidanthera/OpenCoreShell)
 
-## Kexts
+### Kexts
 - [Lilu.kext](https://github.com/acidanthera/Lilu)
 - [LiluFriend.kext](https://github.com/PMheart/LiluFriend)
 - [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen)
