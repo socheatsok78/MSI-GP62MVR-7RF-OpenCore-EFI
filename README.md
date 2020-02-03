@@ -57,3 +57,13 @@ PciRoot(0x0)/Pci(0x1f,0x3)
 7C436110-AB2A-4BBB-A880-FE41995C9F82
 - boot-args: -wegnoegpu
 ```
+
+## :construction: Not-Working
+- Battery (Not showing battery indicator)
+- Touchpad `Working` but not showing in `System Preferences` -> `Trackpad`
+
+## References
+####  OpenCore Guide
+- [Opencore Vanilla Desktop Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/)
+- [Clover Vanilla Laptop Guide](https://fewtarius.gitbook.io/laptopguide/)
+- [Tonymacx86 - MSI GF62VR 7RF, High Sierra 10.13](https://www.tonymacx86.com/threads/guide-msi-gf62vr-7rf-high-sierra-10-13-2.241725/)
