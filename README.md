@@ -28,3 +28,11 @@
 - [USBInjectAll.kext](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)
   - [XHCI-unsupported.kext](https://github.com/RehabMan/OS-X-USB-Inject-All)
 - [AppleMCEReporterDisabler.kext](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip)
+
+### MacOS Post-Install
+
+#### Audio
+```
+PciRoot(0x0)/Pci(0x1f,0x3)
+- layout-id: 06200000
+```
