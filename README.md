@@ -82,7 +82,6 @@ bcfg boot add id FS*:\EFI\BOOT\BOOTx64.efi AppleUEFI
 > Note: `id` is index of your Boot record, you can use `00` if `bcfg boot dump` return empty
 
 ## References
-####  OpenCore Guide
 - [Opencore Vanilla Desktop Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/)
 - [Clover Vanilla Laptop Guide](https://fewtarius.gitbook.io/laptopguide/)
 - [Tonymacx86 - MSI GF62VR 7RF, High Sierra 10.13](https://www.tonymacx86.com/threads/guide-msi-gf62vr-7rf-high-sierra-10-13-2.241725/)
