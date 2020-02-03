@@ -63,6 +63,7 @@ PciRoot(0x0)/Pci(0x1f,0x3)
 ## :construction: Not-Working
 - Battery (Battery is not detected by system)
 - Touchpad `Working` but not showing in `System Preferences` -> `Trackpad`
+- [Other issues](https://github.com/socheatsok78/MSI-GP62MVR-7RF-OpenCore-EFI/issues)
 
 ## Troubleshooting
 ### Internal Hard-disk not detected as `UEFI` boot partition:
