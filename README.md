@@ -1,3 +1,5 @@
+### :warning: Use at your own risk!
+
 # MSI GP62MVR 7RF OpenCore EFI
 - Processor: 7th Gen. `Intel® Core™ i7 Kabylake` processor
   Processor Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, 2801 Mhz, 4 Core(s), 8 Logical Processor(s)
@@ -61,6 +63,23 @@ PciRoot(0x0)/Pci(0x1f,0x3)
 ## :construction: Not-Working
 - Battery (Not showing battery indicator)
 - Touchpad `Working` but not showing in `System Preferences` -> `Trackpad`
+
+## Troubleshooting
+### Internal Hard-disk not detected as `UEFI` boot partition:
+Use the `Shell.efi` to boot into `UEFI Shell`, then run the following command:
+```shell
+bcfg boot dump
+```
+This command will output result of your BIOS boot partitiions. If the result is empty you need to add a new Boot record.
+
+First, run `map` to find your `MacOS` installation drive. Take note on the `FS*` drive letter. eg. `FS4`.
+
+To add a new Boot record, run the following command:
+```shell
+bcfg boot add id FS*:\EFI\BOOT\BOOTx64.efi AppleUEFI
+```
+
+> Note: `id` is index of your Boot record, you can use `00` if `bcfg boot dump` return empty
 
 ## References
 ####  OpenCore Guide
