@@ -1,7 +1,7 @@
 # OpenCore Ignore
 EFI/BOOT/BOOTx64.efi
 EFI/OC/OpenCore.efi
-*.aml
+# *.aml
 *.dsl
 
 # Created by https://www.gitignore.io/api/osx
