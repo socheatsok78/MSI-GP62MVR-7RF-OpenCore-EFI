@@ -1,4 +1,5 @@
-[MSI] MSI GP62MVR 7RF				Patches/MSI_GP62MVR_7RF.txt
+[Core] MSI GP62MVR 7RF				Patches/MSI_GP62MVR_7RF.txt
+------------------------			Patches/.empty
 [Audio] Audio Layout Fix			Patches/Audio_Layout.txt
 [Misc] IRQ Fix						Patches/IRQ_Fix.txt
 [Misc] Brightness Control			Patches/Brightness_Control.txt
