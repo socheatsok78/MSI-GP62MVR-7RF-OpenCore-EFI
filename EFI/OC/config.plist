@@ -740,9 +740,9 @@
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
-			<string>Graphics</string>
+			<string></string>
 			<key>ConsoleBehaviourUi</key>
-			<string>Text</string>
+			<string></string>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>HibernateMode</key>
