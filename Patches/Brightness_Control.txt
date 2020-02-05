@@ -1,3 +1,8 @@
+#-------------------------------------------------------------------------------
+#Maintained by: socheatsok78
+#-------------------------------------------------------------------------------
+# Display Brightness Control
+
 into method label _QB7 replace_content
 begin
 	// Brightness Down\n

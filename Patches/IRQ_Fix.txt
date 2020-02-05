@@ -1,5 +1,7 @@
+#-------------------------------------------------------------------------------
 #Maintained by: RehabMan for: Laptop Patches
 #system_IRQ.txt
+#-------------------------------------------------------------------------------
 
 # This can fix non-working audio and also has an affect on HPET.
 #
