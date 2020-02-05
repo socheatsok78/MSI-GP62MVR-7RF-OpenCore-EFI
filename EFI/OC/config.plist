@@ -833,7 +833,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>keepsyms=1 lilucpu=9 alcid=98 -wegnoegpu -igfxfbdump</string>
+				<string>-wegnoegpu lilucpu=9 alcid=98</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>nvda_drv</key>
