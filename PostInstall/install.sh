@@ -14,7 +14,7 @@ main() {
 intallAudioService() {
     local INSTALL_TARGET="/Library/LaunchDaemons/com.msi.audio.plist"
     local AUDIO_SERVICE_NAME="com.msi.audio.plist"
-    local AUDIO_SERVICE="Library/LaunchDaemons/$AUDIO_SERVICE_NAME"
+    local AUDIO_SERVICE="$(pwd)/Library/LaunchDaemons/$AUDIO_SERVICE_NAME"
 
     if [ -f "$INSTALL_TARGET" ]; then
         echo -n "Removing existing service..."
