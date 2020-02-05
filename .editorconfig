@@ -9,3 +9,6 @@ insert_final_newline = true
 
 [.maciasl]
 indent_style = tab
+
+[*.plist]
+indent_style = tab
