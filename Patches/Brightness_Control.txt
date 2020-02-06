@@ -3,14 +3,23 @@
 #-------------------------------------------------------------------------------
 # Display Brightness Control
 
-into method label _QB7 replace_content
+# Remove existing
+into method label _QB7 code_regex If\s\(_OSI\s\("Darwin"\)\)\s\{.*\n\s+((?:.|\n)*?)\} remove_matched;
+into method label _QB8 code_regex If\s\(_OSI\s\("Darwin"\)\)\s\{.*\n\s+((?:.|\n)*?)\} remove_matched;
+
+# Notify
+into method label _QB7 insert
 begin
-	// Brightness Down\n
-    Notify(\_SB.PCI0.LPCB.PS2K, 0x0405)\n
+    If (_OSI ("Darwin")) {\n
+        // [OpenCore]: Brightness Down\n
+        Notify(\_SB.PCI0.LPCB.PS2K, 0x0405)\n
+    }
 end;
 
-into method label _QB8 replace_content
+into method label _QB8 insert
 begin
-	// Brightness Up\n
-    Notify(\_SB.PCI0.LPCB.PS2K, 0x0406)\n
+    If (_OSI ("Darwin")) {\n
+        // [OpenCore]: Brightness Up\n
+        Notify(\_SB.PCI0.LPCB.PS2K, 0x0406)\n
+    }
 end;
