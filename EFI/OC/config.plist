@@ -42,6 +42,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-XOSI.aml</string>
+				<key>Path</key>
+				<string>SSDT-XOSI.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-EC (Needs EC to EC0 rename) required for Catalina</string>
 				<key>Enabled</key>
 				<true/>
