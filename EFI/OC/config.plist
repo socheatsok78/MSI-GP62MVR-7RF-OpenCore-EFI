@@ -26,15 +26,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PNLF.aml</string>
-				<key>Path</key>
-				<string>SSDT-PNLF.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>plugin-type=1</string>
+				<string>Sets plugin-type = 1 on CPU0/PR00</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -42,7 +34,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-EC (Needs EC to EC0 rename)</string>
+				<string>Fix Backlight for IGPU</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PNLF.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-EC (Needs EC to EC0 rename) required for Catalina</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -50,11 +50,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-USBX.aml</string>
+				<string>Create a stub for VoodooI2C</string>
+				<key>Enabled</key>
+				<true/>
 				<key>Path</key>
+				<string>SSDT-GPIO.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-UIAC.aml</string>
+				<key>Path</key>
+				<string>SSDT-UIAC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-USBX.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
