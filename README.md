@@ -36,8 +36,9 @@
 - [NoTouchID.kext](https://github.com/al3xtjames/NoTouchID)
 - [VoodooInput.kext](https://github.com/acidanthera/VoodooInput)
 - [VoodooPS2Controller.kext](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
-- [USBInjectAll.kext](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)
-  - [XHCI-unsupported.kext](https://github.com/RehabMan/OS-X-USB-Inject-All)
+- ~~[USBInjectAll.kext](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)~~ — `Removed`
+  - ~~[XHCI-unsupported.kext](https://github.com/RehabMan/OS-X-USB-Inject-All)~~ — `Removed`
+- [USBMap.kext](USBMap/USBMap.rtf) — Replacement for `USBInjectAll`
 - [AppleMCEReporterDisabler.kext](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip)
 
 ## [config.plist](EFI/OC/config.plist)
@@ -59,6 +60,18 @@ PciRoot(0x0)/Pci(0x1f,0x3)
 7C436110-AB2A-4BBB-A880-FE41995C9F82
 - boot-args: -wegnoegpu
 ```
+
+#### USB Ports
+- HS03, SS03 — Top left USB port
+- HS04, SS04 — Bottom left USB port
+- HS08, SS08 — Top right USB port
+
+##### Internal
+- HS12 — Internal `USB2.0-CRW` Realtek Card Reader (Not Working)
+- HS10, SS10 — Internal `bluetooth_device`
+- HS07, SS07 — Internal `MSI EPF USB`
+
+> The `USBMap.kext` help to disable the `MSI EPF USB` spamming issue.
 
 ## :construction: Not-Working
 - Battery (Battery is not detected by system)
