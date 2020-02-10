@@ -19,7 +19,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
     Device(UIAC)
     {
         Name(_HID, "UIA00000")
-    
+
         Name(RMCF, Package()
         {
             "EH01", Package()
@@ -61,7 +61,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
                     },
                     "HS12", Package()
                     {
-                        "UsbConnector", 3,
+                        "UsbConnector", 0,
                         "port", Buffer() { 12, 0, 0, 0 },
                     },
                     "SS03", Package()
