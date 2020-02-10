@@ -42,7 +42,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-XOSI.aml</string>
+				<string>Simulate a version of Windows for Darwin</string>
 				<key>Path</key>
 				<string>SSDT-XOSI.aml</string>
 				<key>Enabled</key>
