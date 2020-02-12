@@ -1,6 +1,6 @@
 # OpenCore Ignore
-EFI/BOOT/BOOTx64.efi
-EFI/OC/OpenCore.efi
+# EFI/BOOT/BOOTx64.efi
+# EFI/OC/OpenCore.efi
 # *.aml
 # *.dsl
 
