@@ -2,7 +2,7 @@
 
 set -e
 
-echo -e "Disable 'Reopen windows when loggin back' in feature:\n";
+echo "Disable 'Reopen windows when loggin back in' feature:";
 
 # Ask sudo upfront
 sudo -v
@@ -17,3 +17,5 @@ echo "		[DONE]"
 echo -n "Set the user immutable flag on com.apple.loginwindow..."
 `find ~/Library/Preferences/ByHost/ -name 'com.apple.loginwindow*' -exec sudo chflags uimmutable {} \;`
 echo "	[DONE]"
+
+echo -e "Reopen windows when loggin back in 			[DISABLED]"
