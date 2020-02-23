@@ -78,6 +78,19 @@ PciRoot(0x0)/Pci(0x1f,0x3)
 - Touchpad `Working` but not showing in `System Preferences` -> `Trackpad`
 - [Other issues](https://github.com/socheatsok78/MSI-GP62MVR-7RF-OpenCore-EFI/issues)
 
+## Boot Chime
+To enable the bootchime, run the following command
+```sh
+sudo nvram StartupMute=%00
+```
+
+This not 100%, work proof 
+
+To disable bootchime run
+```sh
+sudo nvram StartupMute=%01
+```
+
 ## Troubleshooting
 ### Internal Hard-disk not detected as `UEFI` boot partition:
 Use the `Shell.efi` to boot into `UEFI Shell`, then run the following command:
